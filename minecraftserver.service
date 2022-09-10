@@ -1,0 +1,10 @@
+(Unit)
+Description=Minecraft Spigot Server
+(Service)
+User=pi
+Group=pi
+Restart=on-abort
+WorkingDirectory=/home/pi/minecraft/
+ExecStart=/usr/bin/java -Xms512M -Xmx1008M -jar /home/pi/minecraft/spigot-1.19.2.jar nogui
+(Install)
+WantedBy=multi-user.target
